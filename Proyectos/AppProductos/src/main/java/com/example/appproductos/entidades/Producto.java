@@ -1,11 +1,13 @@
-package com.upc.appproducto.entidades;
+package com.example.appproductos.entidades;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Producto {
+@Table(name = "TBL_PRODUCTO")
+public class Producto implements Serializable { //Clusterizable
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long codigo;
     private String descripcion;
     private double precio;

@@ -1,0 +1,34 @@
+Deposito
+ {
+   "cliente":
+    {
+    	"idCliente": 1
+    },
+   "tipoOperacion":
+   {
+   	    "idTipo": 1
+   },
+   "monto":20,
+   "numeroCuentaDeposito": 2222222222,
+   "numeroCuentaRetiro" : 0,
+   "respuesta": "Enviado"
+ }
+
+
+Transferencia
+ {
+   "cliente":
+    {
+    	"idCliente": 1
+    },
+   "tipoOperacion":
+   {
+   	    "idTipo": 3
+   },
+   "monto":20,
+   "numeroCuentaDeposito": 2222222222,
+   "numeroCuentaRetiro" : 1111111111,
+   "respuesta": "Enviado"
+ }
+ 
+ 

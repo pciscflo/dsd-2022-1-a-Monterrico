@@ -60,4 +60,7 @@ public class NegocioCentroSalud {
         }
         return centroSaludResultados;
     }
+    public CentroSalud obtenerCentro (Long codigo){
+        return repositorioCentroSalud.findById(codigo).get();
+    }
 }

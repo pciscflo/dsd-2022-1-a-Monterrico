@@ -28,8 +28,8 @@ class AppSaludApplicationTests {
         CentroSalud centroSalud = new CentroSalud();
         centroSalud.setAmbulancias(true);
         centroSalud.setTipo("Hospital");
-        centroSalud.setCalificacionInfraestructura(80);
-        centroSalud.setCalificacionServicios(94);
+        centroSalud.setCalificacionInfraestructura(89);
+        centroSalud.setCalificacionServicios(90);
         CentroSalud salud = negocioCentroSalud.registrar(centroSalud);
         Assert.assertNotNull(salud);
     }

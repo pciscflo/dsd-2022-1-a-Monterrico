@@ -16,7 +16,7 @@ public interface PedidoRepositorio extends JpaRepository<Pedido, Long> {
     @Query("SELECT p.codigo as codigo, p.descripcion as descripcion, p.precio as precio, " +
             "p.estado as estado, p.precio*0.18 as impuesto" +
             " FROM Pedido p")
-    List<IFiltro> obtenerReporteIGV2();
+    List<IFiltro> obtenerReporteIGV2(String s);
 
     @Query("SELECT c.codigo AS codigo, c.estado AS estado, COUNT(c.estado) AS total "
             + "FROM Pedido AS c GROUP BY c.estado ORDER BY c.descripcion")

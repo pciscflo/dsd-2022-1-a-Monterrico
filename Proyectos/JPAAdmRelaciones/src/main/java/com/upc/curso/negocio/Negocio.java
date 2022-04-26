@@ -37,7 +37,7 @@ public class Negocio {
 	}
 	public List<IFiltro> obtenerReportePedidosIGV2(String dni){
 		Cliente cliente = clienteRepositorio.buscarCliente(dni);
-		return pedidoRepositorio.obtenerReporteIGV2();
+		return pedidoRepositorio.obtenerReporteIGV2(dni);
 	}
 	public Pedido realizarPedido(String dni, Pedido pedido){
 		Cliente cliente = clienteRepositorio.buscarCliente(dni);
